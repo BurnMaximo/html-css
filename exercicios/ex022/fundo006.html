@@ -11,11 +11,19 @@
             background-position: center top;
             background-repeat: no-repeat;
             height: 100vh;
-            background-size: cover; /* cover = adapta a imagem a view port*/
+            background-size: cover; /*cover = adapta a imagem a view port*/
+            background-attachment: fixed;
+            
+            /* SHORT HAND
+                color > image > position > repeat > [size] > attachment
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center top no-repeat fixed; /* o size ainda não funciona nessa versão*/
+            background-size: cover;
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
